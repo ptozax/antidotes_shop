@@ -1,13 +1,12 @@
 package antidotes;
 import java.util.Scanner;
 class engin {
-//Moizaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    //puLmoiPulllllllllllllllllllllllllllllllllllllllllllllllll
    public static int login(){
    String id_in="aaa";
    String id;
    String pass_in="111";
    String pass;
-   //int count=3;
    
   Scanner kbw=new Scanner(System.in);     
      
