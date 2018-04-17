@@ -93,6 +93,24 @@ interface poisons{
     
     void print_poison();
 }
+class analyze{
+    void ana1(){
+    
+    
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
 public class Antidotes_demo {
 
  static int a;
@@ -105,15 +123,6 @@ public class Antidotes_demo {
          do{ 
          a=e.login();
          }while(a!=0);
-         a a = new a();
-         a.print();
     }
-  
-    
 }
-class a{
-void print(){
-    System.out.println("a");
-}
-}
-//gg
+
