@@ -1,7 +1,7 @@
 package antidotes;
 import java.util.Scanner;
 class engin {
-    //puLmoiPulllllllllllllllllllllllllllllllllllllllllllllllll
+
    public static int login(){
    String id_in="aaa";
    String id;
@@ -103,11 +103,16 @@ public class Antidotes_demo {
         
         engin e =new engin();
          do{ 
-      
          a=e.login();
-             System.out.println(a);
          }while(a!=0);
+         a a = new a();
+         a.print();
     }
+  
     
 }
-
+class a{
+void print(){
+    System.out.println("a");
+}
+}
