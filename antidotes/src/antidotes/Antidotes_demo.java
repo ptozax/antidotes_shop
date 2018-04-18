@@ -32,56 +32,80 @@ class engin {
    
    }
 }
-abstract class animals{
-     
-     
+ abstract class animals{
+  
 }
 abstract class snake extends animals{
-
+snake(){
+  
+    System.out.println("Do it have cobra hood  ?");
 }
-    abstract class cobra extends snake{//1
+}
+class printsnake extends snake{
+    printsnake(){
+        
+super();
+}
+}
+    class cobra extends snake{//1
+        cobra(){
+            System.out.println("");
+        }
+    }
+    class king_cobra extends snake{//2
 
     }
-    abstract class king_cobra extends snake{//2
+    class krait extends snake{//3
 
     }
-    abstract class krait extends snake{//3
+    class green_pit_vipers extends snake{//4
 
     }
-    abstract class green_pit_vipers extends snake{//4
-
-    }
-    abstract class beaked_sea_snake extends snake{//5
+    class beaked_sea_snake extends snake{//5
 
     }
 abstract class jellyfish extends animals{
     
-    abstract class pmow extends jellyfish{//pmow=Portuguese Man o' War
+   class pmow extends jellyfish{//pmow=Portuguese Man o' War
     
     }
        
-    abstract class sea_wasp extends jellyfish{
+    class sea_wasp extends jellyfish{
     
     }
        
-    abstract class box_jellyfish extends jellyfish{
+    class box_jellyfish extends jellyfish{
     
     }
        
-    abstract class mobaka_sp extends jellyfish{
+    class mobaka_sp extends jellyfish{
     
     }
            
-    abstract class cup_child extends jellyfish{
+    class cup_child extends jellyfish{
     
     }
     
 }
 abstract class spider extends animals{
-
+    class blackwidow extends spider{
+        
+    }
+     class brownwidow extends spider{
+        
+    }
+     class brs extends spider{//brown recluse spider
+        
+    }
 }
-abstract class fish extends animals{
 
+abstract class fish extends animals{
+    class pufferfish extends fish{
+}
+    class lionfish extends fish{
+}
+    class stingray extends fish{
+}
 }
     //------------------------------Animals interface---------------------------
 interface antidotes{
@@ -93,11 +117,23 @@ interface poisons{
     
     void print_poison();
 }
-class analyze{
-    String ana_c1,ana_c2a,ana_c2b,ana_c3,ana_c4; int checkw=0;
-    Scanner scana = new Scanner(System.in);
+
+
+
+
+
+
+
+    //-----------------------------------Analyze-------------------------------------
+class Analyze{
+   
+    String ana_c1,
+            ana_c2a,ana_c2b,
+            ana_c3a,ana_c3b,ana_c3c,ana_c3d,
+            ana_c4; int checkw=0;
+    Scanner scana = new Scanner(System.in);       
     void ana1(){// ?????????
-       do{ System.out.println("On the [1]Earth or [2]Water");
+       do{ System.out.println("On the [1]Earth or in the [2]Water");
         ana_c1=scana.nextLine();
         if(ana_c1.equals("1")){
             ana2A();
@@ -107,10 +143,12 @@ class analyze{
     }while(checkw==1);}
     
     void ana2A(){// snake or spider
- do{System.out.println("On the [1]Snake or [2]Spider [3]Uncertain");
+ do{System.out.println("[1]Snake or [2]Spider [3]Uncertain");
         ana_c2a=scana.nextLine();
         if(ana_c2a.equals("1")){
-            
+           printsnake prts = new printsnake();
+           
+           
         }else if(ana_c2a.equals("2")){
             
         }else if(ana_c2a.equals("3")){
@@ -120,6 +158,19 @@ class analyze{
     }while(checkw==1);}
     
         void ana3A(){
+            do{System.out.println("[1]Snake or [2]Spider [3]Uncertain");
+        ana_c2a=scana.nextLine();
+        if(ana_c2a.equals("1")){
+            
+        }else if(ana_c2a.equals("2")){
+            
+        }else if(ana_c2a.equals("3")){
+            
+        }
+        else{System.out.println("Press only '1' '2' or '3' Please");checkw=1;}
+            
+            
+            }while(checkw==1);
         
         }
     
@@ -134,7 +185,8 @@ class analyze{
     
     
     
-    void ana2B(){ do{System.out.println("On the [1]Fish  [2]Jellyfish [3]Shell [4]Uncertain");
+    void ana2B(){//??? ????????? ???
+        do{System.out.println(" [1]Fish  [2]Jellyfish [3]Shell [4]Uncertain");
         ana_c2b=scana.nextLine();
         if(ana_c2b.equals("1")){
             
@@ -170,9 +222,9 @@ public class Antidotes_demo {
     public static void main(String[] args) {
           System.out.println("Welcome to Mia's Antidotes Shop");
          Scanner kbw =new Scanner(System.in);
-        analyze anl = new analyze();
+        Analyze anl = new Analyze();
         engin e =new engin();
-         do{ 
+         do{
          login_c=e.login();
          if(login_c==4){
              System.out.println("=====Login completed=====");
