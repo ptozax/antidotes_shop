@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 
 
-public class send {
+public class send extends array_stock {
      double total=0;
      int end_total1;
      double end_total2;
@@ -15,10 +15,11 @@ public class send {
      int money_in;
      String location;
      String name;
+     int month;
      double delivery_fee;
-       public void  sum_Express(int total){
+       public void  sum_Express(int total , int month){
         end_total1=total;
-        end_total2=total;
+        this.month=month;
         Scanner kbn =new Scanner(System.in);
         Scanner kbw =new Scanner(System.in);
    
@@ -60,7 +61,7 @@ public class send {
         
         change=money_in-end_total1;
         
-        this.bill(end_total1, change,money_in );
+        this.bill(end_total1, change,money_in ,this.month);
         
         
         
@@ -102,17 +103,18 @@ public class send {
             }
             
            end_total2 =end_total1+delivery_fee;
-            this.bill(end_total2, change,delivery_fee);
+            this.bill(end_total2, change,delivery_fee,month);
             
          }
     }
     
- public void  bill (  int end_total ,int change ,int money_in  ){
-     
-         try {
+ public void  bill (  int end_total ,int change ,int money_in ,int month ){
              int   total=end_total;
              int   change_bill =change;
              int   money_bill  =money_in;
+             int month_in=month;
+         try {
+            
              System.out.println("=====Please wait 2 seconds. =====");
              Thread.sleep(2000);
               System.out.println("Delivery to : "+this.name);
@@ -123,20 +125,27 @@ public class send {
               System.out.println("==================== Thank you ====================");
          } catch (java.lang.InterruptedException iex) {
              System.out.println("iex");;
-        
+        }
+        super.array_money[month_in]= super.array_money[month_in]+total;
+        System.out.println(super.array_money[month_in]);
          
-         }
- 
+         
  
  } 
- public void  bill (  double end_total ,int change,double delivery_fee ){
-                total=end_total;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ public void  bill (  double end_total ,int change,double delivery_fee ,int month){
+             total=end_total;
              double   delivery=delivery_fee;
-             double charge =total*(0.05);
-             
              int   change_bill =change;
              int   money_bill  =money_in;
-             total =total+charge;
+         
              
      try {
              
@@ -159,42 +168,35 @@ public class send {
         
          
          }
-       delivery_man dm=new delivery_man(total ,this.name,this.location );
+       delivery_man dm=new delivery_man(total ,this.name,this.location,month );
  }
- public void  bill(double total_dm ,double  money,double distance,String name ,String location ){
-         
-         try {
+ public void  bill(double total_dm ,double  money,double distance,String name ,String location, int month ){
+             int month_in=month;
              double   total_in=total_dm;
              double  money_in=money;
              double distance_in= distance;
              double change_bill=money_in-total_in;
              String name_in=name;
-             String location_in= location;
-             System.out.println("=====Please wait 2 seconds. =====");
-             Thread.sleep(2000);
-              System.out.println("Delivery to : "+name_in);
-              System.out.println("Location : "+location_in);
+             String location_in= location;    
+                 try {
+             
+                    System.out.println("=====Please wait 2 seconds. =====");
+                       Thread.sleep(2000);
+                    System.out.println("Delivery to : "+name_in);
+                    System.out.println("Location : "+location_in);
               
-              
-              System.out.println("Charge is : "+distance_in);
-              System.out.println("Total is : "+total_in);
-              System.out.println("You moeny is : "+money_in);
-              System.out.println("Change is : "+change_bill);
-              
-              
-              
-              
-              
-              
-              
-              System.out.println("==================== Thank you ====================");
-         } catch (java.lang.InterruptedException iex) {
-             System.out.println("iex");;
-        
-         
-         }
-     
-     
+             
+                    System.out.println("Charge is : "+distance_in);
+                    System.out.println("Total is : "+total_in);
+                    System.out.println("You moeny is : "+money_in);
+                    System.out.println("Change is : "+change_bill);
+                    System.out.println("==================== Thank you ====================");
+                    } 
+                 catch (java.lang.InterruptedException iex) {
+                        System.out.println("iex");;
+                        }
+      super.array_money[month_in]= super.array_money[month_in]+total_in;
+     System.out.println(super.array_money[month_in]);
  
  
  

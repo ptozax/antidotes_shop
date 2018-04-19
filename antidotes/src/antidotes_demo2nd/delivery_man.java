@@ -3,7 +3,7 @@ package antidotes_demo2nd;
 
 import java.util.Scanner;
 public class delivery_man extends send {
-    delivery_man(double total,String name,String location ){
+    delivery_man(double total,String name,String location ,int month){
         String name_dm=name;
         String location_dm=location;
         
@@ -39,8 +39,10 @@ public class delivery_man extends send {
        
        }while(money<total_dm);
        System.out.println("");
+      
        System.out.println("==================== bill ===================="); 
-       super.bill(total_dm,money,distance,name_dm,location_dm);
+       super.bill(total_dm,money,distance,name_dm,location_dm ,month);
+      
         
         
         

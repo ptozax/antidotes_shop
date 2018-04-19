@@ -238,7 +238,7 @@ public class Antidotes_demo2nd {
   static int count=3;
     public static void main(String[] args) {
         send s = new send();
-        s.sum_Express(500);
+        s.sum_Express(500,1);
                 
         
         
