@@ -1,4 +1,4 @@
-package antidotes;
+package antidotes_demo2nd;
 import java.util.Scanner;
 class engin {
 
@@ -10,7 +10,7 @@ class engin {
    
   Scanner kbw=new Scanner(System.in);     
      
-      Antidotes_demo m =new Antidotes_demo();
+      Antidotes_demo2nd m =new Antidotes_demo2nd();
       
       
        System.out.print("enter ID: ");
@@ -36,24 +36,26 @@ class engin {
   
 }
 abstract class snake extends animals{
-snake(){
+ void snake1(){
   
     System.out.println("Do it have cobra hood  ?");
 }
 }
 class printsnake extends snake{
-    printsnake(){
-        
-super();
+    printsnake(){snake1();
 }
+   
 }
+
     class cobra extends snake{//1
-        cobra(){
-            System.out.println("");
+       String cobrap(){
+            return "small cobra hood";
         }
     }
     class king_cobra extends snake{//2
-
+        String king_cobrap(){
+            return "big cobra hood";
+        }
     }
     class krait extends snake{//3
 
@@ -126,32 +128,43 @@ interface poisons{
 
     //-----------------------------------Analyze-------------------------------------
 class Analyze{
-   
+   cobra cob =new cobra();
+   king_cobra kcob = new king_cobra();
     String ana_c1,
             ana_c2a,ana_c2b,
             ana_c3a,ana_c3b,ana_c3c,ana_c3d,
-            ana_c4; int checkw=0;
+            ana_c4,yn; int checkw=0;
     Scanner scana = new Scanner(System.in);       
     void ana1(){// ?????????
        do{ System.out.println("On the [1]Earth or in the [2]Water");
         ana_c1=scana.nextLine();
         if(ana_c1.equals("1")){
-            ana2A();
+            ana2A();    checkw=0;
         }else if(ana_c1.equals("2")){
-            ana2B();
+            ana2B();    checkw=0;
         }else{System.out.println("Press only '1' or '2' Please");checkw=1;}
     }while(checkw==1);}
     
     void ana2A(){// snake or spider
  do{System.out.println("[1]Snake or [2]Spider [3]Uncertain");
         ana_c2a=scana.nextLine();
-        if(ana_c2a.equals("1")){
-           printsnake prts = new printsnake();
-           
-           
-        }else if(ana_c2a.equals("2")){
+        if(ana_c2a.equals("1")){checkw=0;
+          do{ printsnake prts = new printsnake();
+            System.out.println("Yes[Y] No[N]");
+               yn=scana.nextLine();
+                if(yn.equals("Y") || yn.equals("y")){//have borahood or not
+                    System.out.println("How about it ?");
+                    System.out.println("[1]"+cob.cobrap());
+                  System.out.print("[2]"+kcob.king_cobrap());
+                    kcob.king_cobrap(); checkw=0;
+                }else if(yn.equals("n") || yn.equals("N")){checkw=0;
+                
+                }else{System.out.println("Please answe again");checkw=1;}
+          }while(checkw==1);
+               
+        }else if(ana_c2a.equals("2")){checkw=0;
             
-        }else if(ana_c2a.equals("3")){
+        }else if(ana_c2a.equals("3")){checkw=0;
             
         }
         else{System.out.println("Press only '1' '2' or '3' Please");checkw=1;}
@@ -162,9 +175,9 @@ class Analyze{
         ana_c2a=scana.nextLine();
         if(ana_c2a.equals("1")){
             
-        }else if(ana_c2a.equals("2")){
+        }else if(ana_c2a.equals("2")){checkw=0;
             
-        }else if(ana_c2a.equals("3")){
+        }else if(ana_c2a.equals("3")){checkw=0;
             
         }
         else{System.out.println("Press only '1' '2' or '3' Please");checkw=1;}
@@ -215,7 +228,7 @@ class Analyze{
 
 
 
-public class Antidotes_demo {
+public class Antidotes_demo2nd {
 
  static int login_c;
   static int count=3;

@@ -1,3 +1,5 @@
+package antidotes_demo2nd;
+
 
 import java.util.Scanner;
 
@@ -5,6 +7,7 @@ import java.util.Scanner;
 
 
 public class send {
+  
      int end_total1;
      int end_total2;
      int change;
@@ -87,7 +90,7 @@ public class send {
               System.out.println("delivery fee is free");
             }
             
-          //ส่งต่อไปไห้คนส่ง 
+         
             
             
              
