@@ -230,9 +230,18 @@ class Analyze{
 
 public class Antidotes_demo2nd {
 
+
+    
+    
+    
  static int login_c;
   static int count=3;
     public static void main(String[] args) {
+        send s = new send();
+        s.sum_Express(500);
+                
+        
+        
           System.out.println("Welcome to Mia's Antidotes Shop");
          Scanner kbw =new Scanner(System.in);
         Analyze anl = new Analyze();
