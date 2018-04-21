@@ -159,9 +159,9 @@ class Analyze extends send{
                                 System.out.println(puf.print());
                                 checkw=0;}
                                     else if(choice1_2==2){
-                                            System.out.println(lion.print()); }
-                                    else if(choice1_2==3){System.out.println(sting.print());}
-                              else{System.out.println("[1] or [2] Please"); checkw=1;}
+                                            System.out.println(lion.print());checkw=0; }
+                                    else if(choice1_2==3){System.out.println(sting.print());checkw=0;}
+                              else{System.out.println("[1] [2] or [3] Please"); checkw=2;}
                     }while(checkw==1);
                   checkw=0;
           }while(checkw==1);
@@ -178,11 +178,11 @@ class Analyze extends send{
                                 System.out.println(mow.print());
                                 checkw=0;}
                                     else if(choice1_2==2){
-                                            System.out.println("[2]"+sw.print()); }
-                                    else if(choice1_2==3){System.out.println("[3]"+ch.print());}
+                                            System.out.println("[2]"+sw.print());checkw=0; }                              
+                                    else if(choice1_2==3){System.out.println("[3]"+ch.print());checkw=0;}
                               else{System.out.println("[1]  [2] or [3] Please"); checkw=1;}
                     }while(checkw==1);
-                  checkw=0;
+                  checkw=2;
           }while(checkw==1);
             
         }
