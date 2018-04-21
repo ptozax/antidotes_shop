@@ -20,21 +20,7 @@ public class delivery_man extends send {
         
        Scanner kbn=new Scanner(System.in);
        System.out.print("Please enter distance(km.) : ");
-       double distance;
-       
-       do{
-        distance=kbn.nextInt();
-       
-      if(distance<1){
-                System.out.println("========== Please enter number again ==========");
-           System.out.print("===>"); 
-            }
-       
-       }while(distance<1);
-       
-       
-       
-       
+       double distance=kbn.nextInt();
        distance=distance*1.5;
        total_dm=total_dm+distance;
        System.out.println("Charge is :"+distance);
@@ -55,7 +41,7 @@ public class delivery_man extends send {
        System.out.println("");
       
        System.out.println("==================== bill ===================="); 
-       super.bill3(total_dm,money,distance,name_dm,location_dm ,month);
+       super.bill(total_dm,money,distance,name_dm,location_dm ,month);
       
         
         

@@ -1,4 +1,4 @@
- package antidotes_demo2nd;
+package antidotes_demo2nd;
 
 
 import java.util.Scanner;
@@ -7,42 +7,23 @@ import java.util.Scanner;
 
 
 
-public class send {
-    double [] array_money =new double [12];
-     int  [] array_stock =new  int  [6];
-     
-    
-  
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    double i1,i2;
+public class send extends array_stock {
      double total=0;
-     int end_total1=0;
-     double end_total2=0;
-     int change=0;
-     int money_in=0;
-     String location="";
-     String name="";
-     int month=0;
-     double delivery_fee=0;
-    // private double money_1,money_2,money_3,money_4,money_5,money_6,money_7,money_8,money_9,money_10,money_11,money_12;
+     int end_total1;
+     double end_total2;
+     int change;
+     int money_in;
+     String location;
+     String name;
+     int month;
+     double delivery_fee;
        public void  sum_Express(int total , int month){
-    
-     
-     
-     end_total1=total;
+        end_total1=total;
         this.month=month;
         Scanner kbn =new Scanner(System.in);
         Scanner kbw =new Scanner(System.in);
    
-        int push=0;
+        int push;
         do{
           System.out.println("Express delivery Push: 1");
           System.out.println("Normal  delivery Push: 2");
@@ -80,7 +61,7 @@ public class send {
         
         change=money_in-end_total1;
         
-        this.bill1(end_total1, change,money_in ,this.month);
+        this.bill(end_total1, change,money_in ,this.month);
         
         
         
@@ -122,12 +103,12 @@ public class send {
             }
             
            end_total2 =end_total1+delivery_fee;
-            this.bill2(end_total2, change,delivery_fee,month);
+            this.bill(end_total2, change,delivery_fee,month);
             
          }
     }
     
- public void  bill1 (  int end_total ,int change ,int money_in ,int month ){
+ public void  bill (  int end_total ,int change ,int money_in ,int month ){
              int   total=end_total;
              int   change_bill =change;
              int   money_bill  =money_in;
@@ -145,18 +126,10 @@ public class send {
          } catch (java.lang.InterruptedException iex) {
              System.out.println("iex");;
         }
-   
-
-       array_money[month_in]= array_money[month_in]+total;
-       
- 
- 
- 
- 
- 
- 
- 
- 
+        super.array_money[month_in]= super.array_money[month_in]+total;
+        System.out.println(super.array_money[month_in]);
+         
+         
  
  } 
  
@@ -167,7 +140,7 @@ public class send {
  
  
  
- public void  bill2 (  double end_total ,int change,double delivery_fee ,int month){
+ public void  bill (  double end_total ,int change,double delivery_fee ,int month){
              total=end_total;
              double   delivery=delivery_fee;
              int   change_bill =change;
@@ -212,7 +185,7 @@ public class send {
  
  
  
- public void  bill3(double total_dm ,double  money,double distance,String name ,String location, int month ){
+ public void  bill(double total_dm ,double  money,double distance,String name ,String location, int month ){
              int month_in=month;
              double   total_in=total_dm;
              double  money_in=money;
@@ -237,17 +210,22 @@ public class send {
                  catch (java.lang.InterruptedException iex) {
                         System.out.println("iex");;
                         }
-            array_money[month_in]= array_money[month_in]+total;
-     
-            
-            
-            
-            
-            
-            
-            
-            
- }       
-
+      super.array_money[month_in]= super.array_money[month_in]+total_in;
+     System.out.println(super.array_money[month_in]);
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  }
  
+ 
+ 
+ 
+    
+}
+
