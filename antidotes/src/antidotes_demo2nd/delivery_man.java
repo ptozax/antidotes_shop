@@ -10,12 +10,10 @@ public class delivery_man extends send {
         
         double total_dm=total;
         System.out.println("");
-        System.out.println("====================================================");
-        System.out.println("================= DELIVERY MAN =====================");
-        System.out.println("====================================================");
+     System.out.println("====================================================");
+    System.out.println("================= DELIVERY MAN =====================");
+     System.out.println("====================================================");
         System.out.println("");
-       
-        
        
         
        Scanner kbn=new Scanner(System.in);
@@ -26,14 +24,11 @@ public class delivery_man extends send {
         distance=kbn.nextInt();
        
       if(distance<1){
-                System.out.println("========== Please enter number again ==========");
+         System.out.println("========== Please enter number again ==========");
            System.out.print("===>"); 
             }
        
        }while(distance<1);
-       
-       
-       
        
        distance=distance*1.5;
        total_dm=total_dm+distance;
@@ -47,7 +42,8 @@ public class delivery_man extends send {
        System.out.print("Please enter your money : ");
        money=kbn.nextDouble();
        
-       if(money<total_dm){ System.out.println("========== Please enter money again ==========");     }
+       if(money<total_dm){ 
+   System.out.println("========== Please enter money again ==========");     }
        
        
        
@@ -57,26 +53,7 @@ public class delivery_man extends send {
        System.out.println("==================== bill ===================="); 
        super.bill3(total_dm,money,distance,name_dm,location_dm ,month);
       
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    
-    
-    
-    
-    
-    }
+     }
 
 
 

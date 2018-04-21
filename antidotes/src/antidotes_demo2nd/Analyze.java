@@ -16,9 +16,8 @@ class Analyze extends send{
   jellyfish ch = new cup_child();
   Dowanttobuy dwtb = new Dowanttobuy();
    Dowanttobuy wanna = new Dowanttobuy();
-  // array_stock arr = new array_stock();
- 
-   send se =new send();
+  
+  send se =new send();
    Antidotes_demo2nd m = new Antidotes_demo2nd();
     String ana_c1,
             ana_c2a,ana_c2b,
@@ -28,14 +27,7 @@ class Analyze extends send{
     Scanner scana = new Scanner(System.in);    
     Scanner scanchoice = new Scanner(System.in);
     void ana1(){// บกหรือน้ำ
-        
-        
-
-      
-        
-        
-        
-        do{ System.out.println("On the [1]Earth or in the [2]Water");
+    do{ System.out.println("On the [1]Earth or in the [2]Water");
         System.out.print("===>");
         ana_c1=scana.nextLine();
         if(ana_c1.equals("1")){
@@ -64,39 +56,39 @@ class Analyze extends send{
                                 System.out.println(cob.print());
                                 dwtb.Dowanttobuy_print();
                                dwtb.calprice(500);
-                               array_stock[0]=array_stock[0]-dwtb.amout;     //--------------------------------------------
+                               array_stock[0]=array_stock[0]-dwtb.amout;     
                                 se.sum_Express(wanna.priceshow,m.month);
                                 checkw=0;}
                                     else if(choice1_2==2){
                                             System.out.println(kcob.print());
                                             dwtb.Dowanttobuy_print();
                                 dwtb.calprice(800);
-                                 array_stock[1]=array_stock[1]-dwtb.amout;     //--------------------------------------------
-                                          se.sum_Express(wanna.priceshow,m.month);
+                                 array_stock[1]=array_stock[1]-dwtb.amout;     
+                                    se.sum_Express(wanna.priceshow,m.month);
                                 checkw=0; }
-                              else{System.out.println("[1] or [2] Please"); checkw=1;}
+                       else{System.out.println("[1] or [2] Please"); checkw=1;}
                     }while(checkw==1);
                   checkw=0;
                 }else if(yn.equals("n") || yn.equals("N")){checkw=0;
                  do{ printsnake2 a = new printsnake2();
-                        System.out.println("[1]"+kra.prominents()+"  [2]"+gpv.prominents());
+         System.out.println("[1]"+kra.prominents()+"  [2]"+gpv.prominents());
                         System.out.print("===>");
                         choice1_2=scanchoice.nextInt();
                         if(choice1_2==1){
                             System.out.println( kra.print()); checkw=0;
                             dwtb.Dowanttobuy_print();
                                 dwtb.calprice(700);
-                                  array_stock[2]=array_stock[2]-dwtb.amout;     //--------------------------------------------
+                                  array_stock[2]=array_stock[2]-dwtb.amout;     
                                  se.sum_Express(wanna.priceshow,m.month);
                         }else if(choice1_2==2){
                             System.out.println(gpv.print());
                             dwtb.Dowanttobuy_print();
                                 dwtb.calprice(650);
-                                 array_stock[3]=array_stock[3]-dwtb.amout;     //--------------------------------------------
+                                 array_stock[3]=array_stock[3]-dwtb.amout;     
                                  se.sum_Express(wanna.priceshow,m.month);
                                 
                                 checkw=0;
-                        }else{System.out.println("Please answer again");checkw=1;}
+              }else{System.out.println("Please answer again");checkw=1;}
 
                  }while(checkw==1);
                 }else{System.out.println("Please answer again");checkw=1;}
@@ -117,7 +109,7 @@ class Analyze extends send{
                                 System.out.println(blw.print());
                                 dwtb.Dowanttobuy_print();
                                 dwtb.calprice(1000);
-                                  array_stock[4]=array_stock[4]-dwtb.amout;     //--------------------------------------------
+                                  array_stock[4]=array_stock[4]-dwtb.amout;     
                                  se.sum_Express(wanna.priceshow,m.month);
                                 
                                 checkw=0;}
@@ -125,12 +117,12 @@ class Analyze extends send{
                                             System.out.println(brw.print());
                                             dwtb.Dowanttobuy_print();
                                              dwtb.calprice(1000);
-                                               array_stock[5]=array_stock[5]-dwtb.amout;     //--------------------------------------------
-                                              se.sum_Express(wanna.priceshow,m.month);
-                                             checkw=0;
+                                  array_stock[5]=array_stock[5]-dwtb.amout;     
+                                    se.sum_Express(wanna.priceshow,m.month);
+                                           checkw=0;
 
                                 checkw=0; }
-                              else{System.out.println("[1] or [2] Please"); checkw=1;}
+                      else{System.out.println("[1] or [2] Please"); checkw=1;}
                     }while(checkw==1);
                   checkw=0;
                 }else if(yn.equals("n") || yn.equals("N")){
@@ -159,9 +151,9 @@ class Analyze extends send{
                                 System.out.println(puf.print());
                                 checkw=0;}
                                     else if(choice1_2==2){
-                                            System.out.println(lion.print());checkw=0; }
-                                    else if(choice1_2==3){System.out.println(sting.print());checkw=0;}
-                              else{System.out.println("[1] [2] or [3] Please"); checkw=2;}
+                                   System.out.println(lion.print());checkw=0; }
+             else if(choice1_2==3){System.out.println(sting.print());checkw=0;}
+                 else{System.out.println("[1] [2] or [3] Please"); checkw=2;}
                     }while(checkw==1);
                   checkw=0;
           }while(checkw==1);
@@ -178,9 +170,9 @@ class Analyze extends send{
                                 System.out.println(mow.print());
                                 checkw=0;}
                                     else if(choice1_2==2){
-                                            System.out.println("[2]"+sw.print());checkw=0; }                              
-                                    else if(choice1_2==3){System.out.println("[3]"+ch.print());checkw=0;}
-                              else{System.out.println("[1]  [2] or [3] Please"); checkw=1;}
+                    System.out.println("[2]"+sw.print());checkw=0; }                              
+          else if(choice1_2==3){System.out.println("[3]"+ch.print());checkw=0;}
+              else{System.out.println("[1]  [2] or [3] Please"); checkw=1;}
                     }while(checkw==1);
                   checkw=2;
           }while(checkw==1);

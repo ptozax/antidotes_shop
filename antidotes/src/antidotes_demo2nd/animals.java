@@ -40,7 +40,7 @@ class printsnake1 extends snake{
        public String print_antidote(){
        return "Cobra poison serum";}
        String print(){
-       return "The snake was bit you is Cobra."+"\nAntidote is "+print_antidote()+".";
+ return "The snake was bit you is Cobra."+"\nAntidote is "+print_antidote()+".";
        }
     }
 
@@ -51,7 +51,8 @@ class printsnake1 extends snake{
         public String print_antidote(){
        return "King Cobra poison serum";}
         String print(){
-       return "The snake was bit you is King Cobra."+"\nAntidote is "+print_antidote()+".";
+       return "The snake was bit you is King Cobra."+"\nAntidote is "
+               +print_antidote()+".";
        }
     }
 
@@ -62,7 +63,7 @@ class printsnake1 extends snake{
          public String print_antidote(){
        return "Krait poison serum";}
           String print(){
-       return "The snake was bit you is Krait."+"\nAntidote is "+print_antidote()+".";
+ return "The snake was bit you is Krait."+"\nAntidote is "+print_antidote()+".";
        }
 
     }
@@ -74,7 +75,8 @@ class printsnake1 extends snake{
 public String print_antidote(){
        return "Green pit viper poison serum";}
           String print(){
-       return "The snake was bit you is Green pit viper."+"\nAntidote is "+print_antidote()+".";
+       return "The snake was bit you is Green pit viper."+"\nAntidote is "+
+               print_antidote()+".";
        }
     }
 
@@ -99,7 +101,8 @@ super.jfish();
 public String print_antidote(){
        return "Clean wounds with vinegar";}
           String print(){
-       return "The Jellyfish was thorn you is Portuguese Man o' War."+"\nTreatment is "+print_antidote()+".";
+       return "The Jellyfish was thorn you is Portuguese Man o' War."
+               +"\nTreatment is "+print_antidote()+".";
        }
     }
        
@@ -110,7 +113,8 @@ public String print_antidote(){
 public String print_antidote(){
        return "Remove Poisonous Sting and Call Rescue officer";}
           String print(){
-       return "The Jellyfish was thorn you is Green pit sea wasp."+"\nTreatment is "+print_antidote()+".";
+       return "The Jellyfish was thorn you is Green pit sea wasp."
+               +"\nTreatment is "+print_antidote()+".";
        }
     }
        
@@ -122,7 +126,8 @@ public String print_antidote(){
 public String print_antidote(){
        return "Clean your wounds with vinear and Go hospital";}
           String print(){
-       return "The Jellyfish was bit you is Green pit viper."+"\nTreatments is "+print_antidote()+".";
+       return "The Jellyfish was bit you is Green pit viper."
+               +"\nTreatments is "+print_antidote()+".";
        }
     }
     
@@ -151,7 +156,8 @@ super.spider1();
 public String print_antidote(){
        return "Black Widow Anti-poisonous serum ";}
           String print(){
-       return "The Spider was bit you is Black Widow."+"\nAntidote is "+print_antidote()+".";
+       return "The Spider was bit you is Black Widow."+"\nAntidote is "
+               +print_antidote()+".";
        }
     }
      class brownwidow extends spider{
@@ -162,7 +168,8 @@ public String print_antidote(){
 public String print_antidote(){
        return "Brown Widow Anti-poisonous serum";}
           String print(){
-       return "The snake was bit you is Green pit viper."+"\nAntidote is "+print_antidote()+".";
+       return "The snake was bit you is Green pit viper."+"\nAntidote is "
+               +print_antidote()+".";
        }
     }
      class brs extends spider {//brown recluse spider
@@ -172,7 +179,8 @@ public String print_antidote(){
 public String print_antidote(){
        return "Clean your wouds and GO TO HOSPITAL ACCELERATED !!! ";}
           String print(){
-       return "The spider was bit you is Brown recluse spider."+"\nTreatnent : "+print_antidote()+".";
+   return "The spider was bit you is Brown recluse spider."+"\nTreatnent : "
+               +print_antidote()+".";
        }
     }
 
@@ -197,7 +205,8 @@ void fish1(){
     
     return "Have thorn around the body";}
 public String print_antidote(){
-       return "You have to go to Hospitol only it's don't have any antidotes for it";}
+       return "You have to go to Hospitol only it's don't have any"+
+               " antidotes for it";}
           String print(){
        return "The fish you was ate is."+"\n "+print_antidote()+".";
        }
@@ -209,7 +218,8 @@ public String print_antidote(){
 public String print_antidote(){
        return "Heat the wounds";}
           String print(){
-       return "The Fish was hit you is Lion fish."+"\nTreatment is "+print_antidote()+".";
+       return "The Fish was hit you is Lion fish."+"\nTreatment is "
+               +print_antidote()+".";
        }
 }
     class stingray extends fish{
@@ -217,9 +227,11 @@ public String print_antidote(){
     
     return "Flat and round";}
 public String print_antidote(){
-       return "Stop the bleeding first and then heat the wound if it isn't better go to hospital";}
+       return "Stop the bleeding first and then heat the wound if it "
+               + "isn't better go to hospital";}
           String print(){
-       return "The Fish was hit you is Stingray."+"\nAntidote is "+print_antidote()+".";
+       return "The Fish was hit you is Stingray."+"\nAntidote is "
+               +print_antidote()+".";
        }
 }
 

@@ -32,7 +32,7 @@ public class send {
      String name="";
      int month=0;
      double delivery_fee=0;
-    // private double money_1,money_2,money_3,money_4,money_5,money_6,money_7,money_8,money_9,money_10,money_11,money_12;
+    
        public void  sum_Express(int total , int month){
     
      
@@ -48,7 +48,8 @@ public class send {
           System.out.println("Normal  delivery Push: 2");
           System.out.print("===>");
           push=kbn.nextInt();
-          if(push<1||push>2){     System.out.println("========== Please enter again ==========");            }
+          if(push<1||push>2){     
+              System.out.println("========== Please enter again ==========");}
           
           
           
@@ -74,7 +75,7 @@ public class send {
                  money_in=kbn.nextInt();
                   if(money_in<end_total1){
              
-                    System.out.println("========== Please enter number again ==========");                     
+         System.out.println("========== Please enter number again ==========");                     
                   }
             }while(money_in<end_total1);
         
@@ -141,7 +142,7 @@ public class send {
               System.out.println("Total is      : "+total);
               System.out.println("Your money is : "+money_bill);
               System.out.println("Change is     : "+change_bill);
-              System.out.println("==================== Thank you ====================");
+System.out.println("==================== Thank you ====================");
          } catch (java.lang.InterruptedException iex) {
              System.out.println("iex");;
         }
@@ -166,8 +167,8 @@ public class send {
  
  
  
- 
- public void  bill2 (  double end_total ,int change,double delivery_fee ,int month){
+ public void  bill2 
+        (  double end_total ,int change,double delivery_fee ,int month){
              total=end_total;
              double   delivery=delivery_fee;
              int   change_bill =change;
@@ -184,9 +185,9 @@ public class send {
               System.out.println("Total is        : "+total);
               
               
-              System.out.println("========= Have expenses follow the distance =========");
-              System.out.println("========== Please wait an hour and a half ==========");
-              System.out.println("==================== Thank you ====================");
+  System.out.println("========= Have expenses follow the distance =========");
+   System.out.println("========== Please wait an hour and a half ==========");
+   System.out.println("==================== Thank you ====================");
             
              
               
@@ -206,13 +207,10 @@ public class send {
        
  }
  
- 
- 
- 
- 
- 
- 
- public void  bill3(double total_dm ,double  money,double distance,String name ,String location, int month ){
+public void  
+        bill3
+ (double total_dm ,double  money,double distance,
+         String name ,String location, int month ){
              int month_in=month;
              double   total_in=total_dm;
              double  money_in=money;

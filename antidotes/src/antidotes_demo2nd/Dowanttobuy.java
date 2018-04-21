@@ -26,7 +26,7 @@ class Dowanttobuy {
                 System.out.print("===>");
                 amout=amo.nextInt();  
             if(amout<1){
-                System.out.println("========== Please enter number again ==========");
+          System.out.println("========== Please enter number again ==========");
             
             }
              }while(amout<1);
@@ -35,7 +35,7 @@ class Dowanttobuy {
             
             }
             else if(yn.equals("n" )|| yn.equals("N")){
-                System.out.println("We hoping for a quick turnaround on your ailment."); 
+       System.out.println("We hoping for a quick turnaround on your ailment."); 
             }else{System.out.println("Please answer [Y] or [N]");
             check=0;
             }

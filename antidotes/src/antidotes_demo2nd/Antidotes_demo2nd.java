@@ -52,6 +52,7 @@ static int count=3,month,b=1;
           System.out.println("Welcome to Mia's Antidotes Shop");
          Scanner sci =new Scanner(System.in);
         Analyze anl = new Analyze();
+     //send se= new send();
         get got=new get();
       int a;
         login log = new login();
@@ -60,7 +61,7 @@ static int count=3,month,b=1;
                anl.ana1();
                a=0;
            }
-           //System.out.println("Do you want do something else"); 
+          
          }
 
            }
